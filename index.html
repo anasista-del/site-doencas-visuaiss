@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Doenças Visuais</title>
+    <!-- Vinculando o arquivo CSS separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <button onclick="filtrarDoenca('todos')">Ver Todas</button>
+        <button onclick="filtrarDoenca('miopia')">Miopia</button>
+        <button onclick="filtrarDoenca('astigmatismo')">Astigmatismo</button>
+        <button onclick="filtrarDoenca('glaucoma')">Glaucoma</button>
+        <button onclick="filtrarDoenca('catarata')">Catarata</button>
+    </nav>
+
+    <header>
+        <h1>Doenças Visuais</h1>
+        <p class="subtitle">Textos Grandes, Cores Vibrantes e Interatividade!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Card: Miopia -->
+        <div class="card miopia" id="card-miopia">
+            <img src="https://unsplash.com" alt="Miopia">
+            <div class="card-content">
+                <h2>Miopia</h2>
+                <p>Dificuldade nítida para enxergar objetos que estão longe. O formato do olho faz com que a luz foque antes da retina, deixando o fundo totalmente borrado.</p>
+            </div>
+        </div>
+
+        <!-- Card: Astigmatismo -->
+        <div class="card astigmatismo" id="card-astigmatismo">
+            <img src="https://unsplash.com" alt="Astigmatismo">
+            <div class="card-content">
+                <h2>Astigmatismo</h2>
+                <p>Provoca visão desfocada tanto para perto quanto para longe. É causado por uma curvatura irregular na córnea, distorcendo os pontos de luz.</p>
+            </div>
+        </div>
+
+        <!-- Card: Glaucoma -->
+        <div class="card glaucoma" id="card-glaucoma">
+            <img src="https://unsplash.com" alt="Glaucoma">
+            <div class="card-content">
+                <h2>Glaucoma</h2>
+                <p>Doença grave que danifica o nervo óptico, ligada à alta pressão interna do olho. Pode reduzir drasticamente o campo de visão se não tratada.</p>
+            </div>
+        </div>
+
+        <!-- Card: Catarata -->
+        <div class="card catarata" id="card-catarata">
+            <img src="https://unsplash.com" alt="Catarata">
+            <div class="card-content">
+                <h2>Catarata</h2>
+                <p>Deixa a lente natural do olho (cristalino) opaca. A visão fica progressivamente nublada, como se você olhasse através de um vidro embaçado.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="alerta-box">
+            👁️ ATENÇÃO: Visite seu oftalmologista regularmente!
+        </div>
+    </footer>
+
+    <!-- Vinculando o arquivo JavaScript separado -->
+    <script src="script.js"></script>
+</body>
+</html>
 
